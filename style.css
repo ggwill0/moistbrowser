@@ -1,0 +1,23 @@
+/* Moist Browser website — palette A (misty ivory + deep sea blue), same as the app's default Theme. */
+:root{--bg:#F6F4EF;--card:#FFFFFF;--ink:#14212B;--muted:#56636D;--accent:#1F5F8B;--mist:#DCE8F0;--line:#E2E0DA}
+@media (prefers-color-scheme:dark){:root{--bg:#111418;--card:#1A2027;--ink:#E8EEF2;--muted:#9AA8B3;--accent:#6FB3E0;--mist:#1E2C38;--line:#27303A}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--accent)}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 22px}
+header{display:flex;align-items:center;justify-content:space-between;padding-top:26px}
+.brand{font:600 26px/1 "New York",Georgia,serif;letter-spacing:.2px;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.drop{width:22px;height:22px;background:var(--accent);border-radius:50% 0 50% 50%;transform:rotate(-45deg);opacity:.9}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{padding:56px 0 24px}
+.hero h1{font:600 44px/1.1 "New York",Georgia,serif;margin:0 0 14px}
+.hero p{font-size:20px;color:var(--muted);margin:0}
+.ripple{height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.5;margin:34px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+h2{font:600 26px/1.2 "New York",Georgia,serif;margin:40px 0 10px}
+.note{background:var(--mist);border-radius:14px;padding:14px 18px}
+footer{color:var(--muted);font-size:14px;padding:46px 22px 40px}
